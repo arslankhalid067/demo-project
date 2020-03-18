@@ -1,0 +1,8 @@
+<h2>Product Details</h2>
+  <h3><%= @product.title %></h3>
+  <p><%= @product.description %></p>
+  <b>Color: </b> <span><%= @product.color %></span><br>
+  <b>Fabric: </b> <span><%= @product.fabric %></span>
+
+  <%= link_to "Edit Product", edit_product_path %>
+  <%= link_to "Delete", product_path, method: :delete, data: {confirm: "Are you Sure?"} %>
