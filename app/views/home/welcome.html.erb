@@ -1,3 +1,18 @@
-<div class="wrapper">
-    <h1>Ecommerece Demo Project</h1>
+<div class="wrapper"> 
+<section id="header">
+      <li class="logo"><%= link_to 'DEVSHOP',root_path %></li>
+
+    <ul id="menu">
+    <% if current_user %>
+      <li><%= link_to 'Log Out', destroy_user_session_path, method: :delete %></li>
+    <% else %>
+      <li><%= link_to 'Log In', new_user_session_path %></li>
+      <li><%= link_to 'Create An Account', new_user_registration_path %></li>
+    <% end %>
+    </ul>
+</section>
+<%= render "shared/alerts" %>
+    <div class="banner">
+      <div class="banner-img"></div>
+    </div>
 </div>

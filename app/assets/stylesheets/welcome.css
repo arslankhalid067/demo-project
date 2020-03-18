@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  background-color: black;
+  height: 70px;
+}
+#menu {
+  list-style: none;
+  float: right;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+.logo {
+  float: left;
+  padding: 10px;
+  margin-top: 3px;
+  margin-left: 15px;
+}
+.logo > a {
+  text-decoration: none;
+  list-style-type: none;
+  font: 600 26px Open Sans;
+  color: white;
+}
+#menu > li {
+  margin-left: 2em;
+  float: left;
+}
+#menu > li > a {
+  color: white;
+  font: bold 16px Open Sans;
+  text-decoration: none;
+}
+.banner-img {
+  background: url("https://www.orangemantra.com/blog/wp-content/uploads/2015/12/ecommerce-web-development.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
